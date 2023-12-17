@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Linguagem do site-->
+
+<head>
+    <meta charset="UTF-8"> <!-- formato do caracter / padrozinação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ateliê para cosplayer, interessados em fazer cosplays sob medida.">
+    <link rel="shortcut icon" href="../fox.ico" type="image/x-icon">
+    <title>Ateliê Nahluamui</title> <!-- TÍTULO do site topo -->
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap'); /* import dos estilos de letras que vão ser utilizadas a fonte/ exemplo arial; timesnew etc  */
+
+* {
+    margin: 0;      /*essa parte seria para as margens do site e resets no css */
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {  /*essa parte é para o tamanho da fonte do site formatando todas as letras do site e uma cor de background */
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #3d3131 16.62%, #b65fb8 85.61%);
+}
+
+.cabecalho { /* essa parte do display, tem que ser olhada no guia, é para basicamente ajustar onde vai ficar cada coisa imagem botoes letras bastante util */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem { /* tamanho da imagem */
+  height: 72px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+  color: #f7f6f6;
+}
+.cabecalho-menu-loja {
+    font-size: 30px;
+    color: #f7f6f6;
+}
+.cabecalho-menu-item { /* fonte do menu alterada especificamente para o menu, fonte da letra e cor também os pixels */
+    font-family: 'Sarala', sans-serif;
+    color: #f7f6f6;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2e7; /*linha divisoria do cabecalho para o conteudo */
+}
+
+.conteudo-principal { /*mais flex box para poder organizar as imagens e textos*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2e7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ece9e9;
+}
+
+.conteudo-principal-botao {
+    background-color: #f5f1f8;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #0c0c0c;
+}
+
+.conteudo-principal-botao:hover {
+    background-color: rgba(218, 163, 240, 0.53);
+    
+}
+
+.conteudo-principal-imagem-cosmaker {
+ height: 380px;
+ margin-top: 20px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2e7;
+    padding-top: 48px;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ece9e9;
+
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2e7;
+}
+
+.imagem-rodape {
+    height: 200px;
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+</style>
+
+<body>
+
+<header class="cabecalho"> <!-- class é muito importante definir para poder ajustar futuramente no css, fica mais facil de você alterar alguma coisa no css, definindo classes nos conteudos do site. -->
+<img class="cabecalho-imagem" src="../fox.ico" alt="Logo da lojinha">
+<nav class="cabecalho-menu">
+    <a class="cabecalho-menu-loja" href="https://discord.gg/7psFHSZY">Ateliê Nahluamui</a>
+    <a class="cabecalho-menu-item" href="https://www.instagram.com/nahluamui/">Cosplays</a> <!--nesse caso foi definido cabecalho-menu-item para varios itens com o mesma classe ou seja na hora que eu for alterar essa classe, vai alterar todas as classes com o mesmo nome, fica mais facil de organizar por exemplo um cardapio digital (menu)-->
+    <a class="cabecalho-menu-item" href="https://www.instagram.com/stories/highlights/17870546327859261/">Wigs</a>
+    <a class="cabecalho-menu-item" href="https://www.instagram.com/salsicha3d/">Props</a>
+    <a class="cabecalho-menu-item" href="https://www.instagram.com/stories/highlights/17920843972450454/">FeedBacks</a>
+</nav>
+</header>
+    
+<main class="conteudo">
+<section class="conteudo-principal">
+<div class="conteudo-principal-escrito">
+<h1 class="conteudo-principal-escrito-titulo">Ateliê Nahluamui</h1>
+<h2 class="conteudo-principal-escrito-subtitulo">Faça um orçamento do seu cosplay</h2>
+<button class="conteudo-principal-botao">Faça aqui seu orçamento</button>
+</div>
+<img class="conteudo-principal-imagem-cosmaker" src="../nahluamui_pages-to-jpg-0002.jpg" alt="Cartão da loja frente">
+
+</section>
+
+<section class="conteudo-secundario">
+<h3 class="conteudo-secundario-titulo">Olá, eu sou a nahluamui! Cosplayer brasileira a 10 anos. Também sou cosmaker a 3 anos e estou a disposição para trazer seu personagem favorito para a vida real!</h3>
+<p class="conteudo-secundario-paragrafo">1.<strong>Costuro</strong> o cosplay desejado</p>
+<p class="conteudo-secundario-paragrafo">2.Sou <strong>wigmaker</strong>, dou um trato na sua peruca e deixo perfeita</p>
+<p class="conteudo-secundario-paragrafo">3.tenho pareceria com <strong>props</strong> caso desejar</p>
+</section>
+</main>
+
+<footer class="rodape">
+<img class="imagem-rodape" src="../nahluamui_pages-to-jpg-0001.jpg" atl="Cartão da loja verso">
+</footer>
+
+</body>
+
+</html>
